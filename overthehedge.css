@@ -1,4 +1,4 @@
-body { 
+.body { 
 /*
     height: 100%;
     width: 100%;
@@ -41,7 +41,7 @@ div {
   width: 100px;
   height: 100px;
   animation-name: spin;
-  animation-duration: 5000ms;
+  animation-duration: 1ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -57,7 +57,7 @@ color:rgb(166, 255, 0);
   height: 100px;
   background-color: #0CB1C4;
   animation-name: spin;
-  animation-duration: 3000ms;
+  animation-duration: 1ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -66,7 +66,7 @@ color:rgb(166, 255, 0);
   height: 100px;
   background-color: #0CB1C4;
   animation-name: spin;
-  animation-duration: 10000ms;
+  animation-duration: 1ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -75,7 +75,7 @@ color:rgb(166, 255, 0);
         transform:rotate(0deg);
     }
     to {
-        transform:rotate(360deg);
+        transform:rotate(1deg);
     }
 }
 
@@ -104,6 +104,13 @@ color:rgb(166, 255, 0);
     animation-timing-function: steps(2, start);
   z-index:100;
 }
+.blinksuper {
+    animation-duration: 0.1s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2, start);
+  z-index:100;
+}
 .blink {
     animation-duration: 0.5s;
     animation-name: blink;
@@ -122,4 +129,10 @@ color:rgb(166, 255, 0);
     80% {
         visibility: hidden;
     }
+}
+
+
+
+#music {
+    display: none;
 }
