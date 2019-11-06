@@ -11,6 +11,9 @@
               <source src="autoplay.mp3">
             </audio>
         </div>
+        <div id="shake">
+            <p><br><br><br><br><br><br><br><br><br><br></p>
+        </div>
         <h1 class="blinkslower orange">Travel to over the hedge</h1>
         <h2 class="blink orange">THE GRASS ON THE OTHER SIDE IS TRULY GREENER</h2>
         
@@ -37,6 +40,13 @@
             <li>Life fufilment</li>
             </ol>
         </h4>
-        
+        <script>
+            setInterval(() => {
+                document.getElementById("shake").style.display = "none";
+                setTimeout(() => {
+                    document.getElementById("shake").style.display = "block";
+                }, 150)
+            }, 300)
+        </script>
     </body>
 </html>
